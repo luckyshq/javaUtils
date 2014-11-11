@@ -1,4 +1,10 @@
-//参考 http://zh.wikipedia.org/wiki/HTTP状态码
+/**
+ *@Author: luckyshq
+ *@Time: 2014-11-11 12:01
+ *@Describe: 所有的Http状态码常量
+ *
+ *参考 http://zh.wikipedia.org/wiki/HTTP状态码
+ */
 class HttpStatusCode {
 
 
