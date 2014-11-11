@@ -1,6 +1,7 @@
 //参考 http://zh.wikipedia.org/wiki/HTTP状态码
 class HttpStatusCode {
 
+
     /**
      * 1xx消息
      *
