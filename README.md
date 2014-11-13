@@ -6,14 +6,18 @@ javaUtils
 ---
 
 ### 版本
-#### Version 0.0.1
+#### Version 0.0.2
 #####  Http相关:
 * HttpRequestCode 所有的既定http状态码.
 * HttpCommonCode 常用的http状态码,同时封装`getCodeString`方法.
+#####  Value相关:
+* ProgressHelper 获取数值进度工具类.
 
 ---
 
 ### 更新
+#### Version 0.0.2
+* 添加ProgressHelper工具类
 #### Version 0.0.1
 * 创建仓库
 * 添加Http状态码封装类**HttpRequestCode** & **HttpCommonCode**
