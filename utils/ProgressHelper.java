@@ -24,7 +24,7 @@ public class ProgressHelp {
         } else if (0 == currentInt) {
             return PROGRESS_MIN;
         } else {
-            return (int) (targetInt / currentInt);
+            return (int) (targetInt * 100 / currentInt);
         }
     }
 
@@ -42,7 +42,7 @@ public class ProgressHelp {
         } else if (currentInt >= startInt) {
             return PROGRESS_MIN;
         } else {
-            return ((startInt - currentInt) / (startInt - targetInt));
+            return ((startInt - currentInt) * 100 / (startInt - targetInt));
         }
     }
 
@@ -61,7 +61,7 @@ public class ProgressHelp {
         } else if (currentInt <= startInt){
             return PROGRESS_MIN;
         } else {
-            return ((currentInt - startInt) / (targetInt - startInt));
+            return ((currentInt - startInt) * 100 / (targetInt - startInt));
         }
     }
 }
