@@ -5,8 +5,11 @@
  *
  *参考 http://zh.wikipedia.org/wiki/HTTP状态码
  */
-class HttpStatusCode {
+public class HttpStatusCode {
 
+    private HttpStatusCode(){
+        throw new AssertionError();
+    }
 
     /**
      * 1xx消息

@@ -7,7 +7,7 @@ javaUtils
 
 ### 版本
 
-#### Version 0.0.3
+#### Version 0.0.4
 
 #####  Http相关:
 * HttpRequestCode 所有的既定http状态码.
@@ -19,6 +19,9 @@ javaUtils
 ---
 
 ### 更新
+
+#### Version 0.0.4 
+* 添加私有构造函数并抛出错误,避免外部或内部实例化工具类.
 
 #### Version 0.0.3
 * 修复ProgressHelper百分比显示错误的bug

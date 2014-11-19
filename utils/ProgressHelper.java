@@ -1,6 +1,6 @@
 /**
  *@Author: luckyshq
- *@Time: 2014-11-11 12:24
+ *@Time: 2014-11-13 14:23
  *@Describe: Progress工具类
  *
  */
@@ -8,6 +8,10 @@ public class ProgressHelp {
     static public final int PROGRESS_MAX = 100;
     static public final int PROGRESS_MIN = 0;
     static public final int ERROR = -1;
+
+    private ProgressHelp(){
+        throw new AssertionError();
+    }
 
     /**
      * 默认初始值为0,获取Progress进度

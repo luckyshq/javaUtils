@@ -4,13 +4,17 @@
  *@Describe: 常用的Http状态码常量
  *
  */
- class HttpCommonCode {
+public class HttpCommonCode {
 
     public static final int SUCCESS = 200;
     public static final int NOT_MODIFIED = 304;
     public static final int NOT_FOUND = 404;
     public static final int INTERNAL_SERVER_ERROR = 500;
     public static final int SERVICE_UNAVAILABLE = 503;
+
+    private HttpCommonCode() {
+        throw new AssertionError();
+    }
 
     public static String getCodeString(int code){
       switch (code) {
