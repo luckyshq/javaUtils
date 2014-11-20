@@ -1,8 +1,7 @@
 /**
- *@Author: luckyshq
- *@Time: 2014-11-11 12:24
- *@Describe: 常用的Http状态码常量
- *
+ * @Author: luckyshq
+ * @Time: 2014-11-11 12:24
+ * @Describe: 常用的Http状态码常量
  */
 public class HttpCommonCode {
 
@@ -16,25 +15,21 @@ public class HttpCommonCode {
         throw new AssertionError();
     }
 
-    public static String getCodeString(int code){
-      switch (code) {
-          case SUCCESS:
-            return "success!"
-            break;
-          case NOT_MODIFIED:
-            return "not modified!"
-            break;
-          case NOT_FOUND:
-            return "not found!"
-            break;
-          case INTERNAL_SERVER_ERROR:
-            return "internal server error!";
-            break;
-          case SERVICE_UNAVAILABLE:
-            return "service unavailable!";
-            break;
-          default:
-            break;
-      }
+    public static String getCodeString(int code) {
+        switch (code) {
+            case SUCCESS:
+                return "success!";
+            case NOT_MODIFIED:
+                return "not modified!";
+            case NOT_FOUND:
+                return "not found!";
+            case INTERNAL_SERVER_ERROR:
+                return "internal server error!";
+            case SERVICE_UNAVAILABLE:
+                return "service unavailable!";
+            default:
+                break;
+        }
+        return "this code isn't exist!";
     }
- }
+}

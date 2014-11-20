@@ -4,12 +4,12 @@
  *@Describe: Progress工具类
  *
  */
-public class ProgressHelp {
+public class ProgressHelper {
     static public final int PROGRESS_MAX = 100;
     static public final int PROGRESS_MIN = 0;
     static public final int ERROR = -1;
 
-    private ProgressHelp(){
+    private ProgressHelper(){
         throw new AssertionError();
     }
 
