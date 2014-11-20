@@ -1,5 +1,8 @@
 ### 更新
 
+#### Version 0.1.1 `2014-11-20 19:22`
+* 完成SimpleDateFormatFun类.
+
 #### Version 0.1.0 `2014-11-20 11:56`
 * 添加SimpleDateFormatFun,并完成一部分函数的实现.
 

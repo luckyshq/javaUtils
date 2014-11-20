@@ -17,11 +17,15 @@ javaUtils
 * ProgressHelper 获取数值进度工具类.
 
 ##### Date相关:
-* SimpleDateFormatFun 通过函数式方法生成DateFormat. (e.g. new SimpleDateFormatFun().yearFull().monthNum().day().fin(), 目前函数还没全部完成,仅供娱乐>,<)
+* SimpleDateFormatFun 通过函数式方法生成DateFormat. (e.g. new SimpleDateFormatFun().year().s().monthNum().s().day().fin(), 仅供娱乐>,<)
+* SimpleDateFactory 常用SimpleDateForm工厂类. (编写中,这个肯定比上面那个实用=.=)
 
 ---
 
 ### 更新
+
+#### Version 0.1.1
+* 完成SimpleDateFormatFun类.
 
 #### Version 0.1.0
 * 添加SimpleDateFormatFun,并完成一部分函数的实现.

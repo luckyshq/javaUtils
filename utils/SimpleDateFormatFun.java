@@ -1,11 +1,10 @@
 import java.text.SimpleDateFormat;
 
 /**
- *@Author: luckyshq
- *@Time: 2014-11-20 09:58
- *@Describe: 使用函数式实现的DateFormat工具类(感觉这个类有点画蛇添足>,< 仅供娱乐)
- *
- *@Reference: http://developer.android.com/reference/java/text/SimpleDateFormat.html
+ * @Author: luckyshq
+ * @Time: 2014-11-20 09:58
+ * @Describe: 使用函数式实现的DateFormat工具类(感觉这个类有点画蛇添足>,< 仅供娱乐)
+ * @Reference: http://developer.android.com/reference/java/text/SimpleDateFormat.html
  */
 
 public final class SimpleDateFormatFun extends SimpleDateFormat {
@@ -33,6 +32,8 @@ public final class SimpleDateFormatFun extends SimpleDateFormat {
     private static final String DAY_IN_YEAR = "D"; //e.g. 189
     private static final String DAY_IN_MONTH = "d"; //e.g. 10
     private static final String DAY_OF_WEEK_SINGLE = "E"; //e.g. E:Tue EEEE:Tuesday EEEEE:T
+    private static final String DAY_OF_WEEK_FOUR = "EEEE";
+    private static final String DAY_OF_WEEK_FIVE = "EEEEE";
     private static final String STAND_ALONE_DAY_OF_WEEK = "c"; //e.g. c/cc/ccc:Tue, cccc:Tuesday, ccccc:T
     private static final String DAY_OF_WEEK_IN_MONTH = "F"; //e.g. 2
 
@@ -53,72 +54,145 @@ public final class SimpleDateFormatFun extends SimpleDateFormat {
     private static String mPatternString = "";
 
     //用Singleton的话线程不安全,所以每次使用的时候都创建一个新对象.
-    public SimpleDateFormatFun(){
+    public SimpleDateFormatFun() {
 
     }
 
-    private SimpleDateFormatFun a(String string){
+    public SimpleDateFormatFun a(String string) {
         mPatternString += string;
         return this;
     }
 
-    public SimpleDateFormatFun fin(){
+    public SimpleDateFormatFun fin() {
         this.applyPattern(mPatternString);
         return this;
     }
 
-    public SimpleDateFormatFun era(){
+    public SimpleDateFormatFun era() {
         return a(ERA);
     }
 
-    public SimpleDateFormatFun yearFull(){
+    public SimpleDateFormatFun year() {
         return a(YEAR);
     }
 
-    public SimpleDateFormatFun yearTwoChar() {
+    public SimpleDateFormatFun yearTwoNum() {
         return a(YEAR_TWO);
     }
 
-    public SimpleDateFormatFun monthSANum(){
+    public SimpleDateFormatFun monthSANum() {
         return a(STAND_ALONE_MONTH_SINGLE);
     }
 
-    public SimpleDateFormatFun monthSANumZero(){
+    public SimpleDateFormatFun monthSANumZero() {
         return a(STAND_ALONE_MONTH_TWO);
     }
 
-    public SimpleDateFormatFun monthSAChar(){
+    public SimpleDateFormatFun monthSAChar() {
         return a(STAND_ALONE_MONTH_THREE);
     }
 
-    public SimpleDateFormatFun monthSACharFull(){
+    public SimpleDateFormatFun monthSACharFull() {
         return a(STAND_ALONE_MONTH_FOUR);
     }
 
-    public SimpleDateFormatFun monthSACharSimple(){
+    public SimpleDateFormatFun monthSACharSimple() {
         return a(STAND_ALONE_MONTH_FIVE);
     }
 
-    public SimpleDateFormatFun monthNum(){
+    public SimpleDateFormatFun monthNum() {
         return a(MONTH_IN_YEAR_SINGLE);
     }
 
-    public SimpleDateFormatFun monthNumZero(){
+    public SimpleDateFormatFun monthNumZero() {
         return a(MONTH_IN_YEAR_TWO);
     }
 
-    public SimpleDateFormatFun monthChar(){
+    public SimpleDateFormatFun monthChar() {
         return a(MONTH_IN_YEAR_THREE);
     }
 
-    public SimpleDateFormatFun monthCharFull(){
+    public SimpleDateFormatFun monthCharFull() {
         return a(MONTH_IN_YEAR_FOUR);
     }
 
-    public SimpleDateFormatFun monthCharSimple(){
+    public SimpleDateFormatFun monthCharSimple() {
         return a(MONTH_IN_YEAR_FIVE);
     }
 
+    public SimpleDateFormatFun weekInMonth() {
+        return a(WEEK_IN_MONTH);
+    }
 
+    public SimpleDateFormatFun weekInYear() {
+        return a(WEEK_IN_YEAR);
+    }
 
+    public SimpleDateFormatFun dayInYear() {
+        return a(DAY_IN_YEAR);
+    }
+
+    public SimpleDateFormatFun day() {
+        return a(DAY_IN_MONTH);
+    }
+
+    public SimpleDateFormatFun dayOfWeekChar() {
+        return a(DAY_OF_WEEK_SINGLE);
+    }
+
+    public SimpleDateFormatFun dayOfWeekCharFull() {
+        return a(DAY_OF_WEEK_FOUR);
+    }
+
+    public SimpleDateFormatFun dayOfWeekCharSimple() {
+        return a(DAY_OF_WEEK_FIVE);
+    }
+
+    public SimpleDateFormatFun hour() {
+        return a(HOUR_IN_DAY_ZERO);
+    }
+
+    public SimpleDateFormatFun hourStartOne() {
+        return a(HOUR_IN_DAY_ONE);
+    }
+
+    public SimpleDateFormatFun hourAP() {
+        return a(HOUR_IN_AM_OR_PM_ZERO);
+    }
+
+    public SimpleDateFormatFun hourAPStartOne() {
+        return a(HOUR_IN_AM_OR_PM_ONE);
+    }
+
+    public SimpleDateFormatFun amOrPm() {
+        return a(AM_PM_MARKER);
+    }
+
+    public SimpleDateFormatFun minute() {
+        return a(MINUTE_IN_HOUR);
+    }
+
+    public SimpleDateFormatFun second() {
+        return a(SECOND_IN_MINUTE);
+    }
+
+    public SimpleDateFormatFun secondFractional(){
+        return a(FRACTIONAL_SECONDS);
+    }
+
+    public SimpleDateFormatFun timeZone(){
+        return a(TIME_ZONE);
+    }
+
+    public SimpleDateFormatFun b(){
+        return a(" ");
+    }
+
+    public SimpleDateFormatFun c(){
+        return a(":");
+    }
+
+    public SimpleDateFormatFun s(){
+        return a("//");
+    }
 }
