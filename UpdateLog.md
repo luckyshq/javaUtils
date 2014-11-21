@@ -1,5 +1,8 @@
 ### 更新
 
+#### Version 0.1.2 `2014-11-21 11:59`
+* 完成SimpleDateFormatFactory基本年月日时分秒的构造,获取.
+
 #### Version 0.1.1 `2014-11-20 19:22`
 * 完成SimpleDateFormatFun类.
 

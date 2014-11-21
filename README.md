@@ -7,7 +7,7 @@ javaUtils
 
 ### 版本
 
-#### Version 0.1.0
+#### Version 0.1.2
 
 #####  Http相关:
 * HttpRequestCode 所有的既定http状态码.
@@ -18,11 +18,14 @@ javaUtils
 
 ##### Date相关:
 * SimpleDateFormatFun 通过函数式方法生成DateFormat. (e.g. new SimpleDateFormatFun().year().s().monthNum().s().day().fin(), 仅供娱乐>,<)
-* SimpleDateFactory 常用SimpleDateForm工厂类. (编写中,这个肯定比上面那个实用=.=)
+* SimpleDateFactory 常用SimpleDateFormat工厂类. (编写中,这个肯定比上面那个实用=.=)
 
 ---
 
 ### 更新
+
+#### Version 0.1.2
+* 完成SimpleDateFormatFactory基本年月日时分秒的构造,获取.
 
 #### Version 0.1.1
 * 完成SimpleDateFormatFun类.
@@ -30,21 +33,6 @@ javaUtils
 #### Version 0.1.0
 * 添加SimpleDateFormatFun,并完成一部分函数的实现.
 
-#### Version 0.0.5 
-* 修复Http部分bug.
-
-#### Version 0.0.4
-* 添加私有构造函数并抛出错误,避免外部或内部实例化工具类.
-
-#### Version 0.0.3
-* 修复ProgressHelper百分比显示错误的bug
-
-#### Version 0.0.2
-* 添加ProgressHelper工具类
-
-#### Version 0.0.1
-* 创建仓库
-* 添加Http状态码封装类**HttpRequestCode** & **HttpCommonCode**
 
 
 ---
