@@ -63,11 +63,14 @@ public class MyMath {
     public static boolean isPrimeNumber(int number){
         if (2 == number || number % 2 != 0){
             int sqrt = (int) Math.sqrt(number);
+
+            //TODO 可以用质数表进行优化,而不用一个个的去除
             for (int i = 3; i <= sqrt; i++){
                 if (number % i == 0) {
                     return false;
                 }
             }
+
             return true;
         }
         return false;
