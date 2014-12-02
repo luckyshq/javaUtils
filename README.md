@@ -7,7 +7,7 @@ javaUtils
 
 ### 版本
 
-#### Version 0.1.2
+#### Version 0.1.3
 
 #####  Http相关:
 * HttpRequestCode 所有的既定http状态码.
@@ -15,6 +15,7 @@ javaUtils
 
 #####  Value相关:
 * ProgressHelper 获取数值进度工具类.
+* MyMath 数学计算相关类.
 
 ##### Date相关:
 * SimpleDateFormatFun 通过函数式方法生成DateFormat. (e.g. new SimpleDateFormatFun().year().s().monthNum().s().day().fin(), 仅供娱乐>,<)
@@ -23,6 +24,9 @@ javaUtils
 ---
 
 ### 更新
+
+#### Version 0.1.3
+* 添加MyMath数学计算相关类.
 
 #### Version 0.1.2
 * 完成SimpleDateFormatFactory基本年月日时分秒的构造,获取.

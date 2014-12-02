@@ -1,7 +1,3 @@
-/**
- * Created by zhangshengqi on 14-11-21.
- */
-
 import java.text.SimpleDateFormat;
 
 /**
