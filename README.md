@@ -7,7 +7,14 @@ javaUtils
 
 ### 版本
 
-#### Version 0.1.3
+#### Version 0.2.0
+
+#### Android
+
+##### UI相关:
+* InputUtils 界面上输入相关工具类.
+
+#### Java
 
 #####  Http相关:
 * HttpRequestCode 所有的既定http状态码.
@@ -25,19 +32,8 @@ javaUtils
 
 ### 更新
 
-#### Version 0.1.3
-* 添加MyMath数学计算相关类.
-
-#### Version 0.1.2
-* 完成SimpleDateFormatFactory基本年月日时分秒的构造,获取.
-
-#### Version 0.1.1
-* 完成SimpleDateFormatFun类.
-
-#### Version 0.1.0
-* 添加SimpleDateFormatFun,并完成一部分函数的实现.
-
-
+#### Version 0.2.0 `2014-12-4 15:26`
+* 添加androidUtils文件夹,并添加InputUtils输入相关类.
 
 ---
 
