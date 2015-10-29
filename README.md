@@ -7,12 +7,7 @@ javaUtils
 
 ### 版本
 
-#### Version 0.2.0
-
-#### Android
-
-##### UI相关:
-* InputUtils 界面上输入相关工具类.
+#### Version 0.2.1
 
 #### Java
 
@@ -32,8 +27,8 @@ javaUtils
 
 ### 更新
 
-#### Version 0.2.0 `2014-12-4 15:26`
-* 添加androidUtils文件夹,并添加InputUtils输入相关类.
+#### Version 0.2.1 `2015-10-29`
+* 移除androidUtils文件夹，在Github为AndroidUtil新建单独的repository.
 
 ---
 
