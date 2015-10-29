@@ -1,3 +1,4 @@
+package utils;
 /**
  *@Author: luckyshq
  *@Time: 2014-11-13 14:23
